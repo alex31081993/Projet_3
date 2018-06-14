@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Click And roll</title>
+    <meta name="description" content="Location de vélib à Paris">
+    <meta name="keywords" content="vélib, vélo, location, paris">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="../images/font-awesome/css/font-awesome.min.css">  
+  </head>
+  <body>
+      
+      <!--banniére du site -->
+      <header>
+        <div id="contenu_titre">
+            
+            <div id="velo">
+                 <img src="../images/velo.svg" alt="logo de velo"/>
+            </div>
+            
+            <h1>Click And Roll</h1>
+            
+        </div>
+      </header>
+       
+      <!-- diaporama du site -->
+      <section>
+        <div id="diaporama">
+            
+            <img src="../images/velib/etape1.jpg" alt="image 1 du diaporama"/>
+            <img src="../images/velib/etape2.jpg" alt="image 2 du diaporama"/>
+            <img src="../images/velib/etape3.jpg" alt="image 3 du diaporama"/>
+            
+        </div>
+
+        <div id="f_gauche">
+            
+            <i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>
+            
+        </div>
+      
+        <div id="f_droite">
+            
+            <i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
+            
+        </div> 
+      </section>
+      <!-- fin du diaporama -->
+      
+    <section>
+        <!-- map de l'api google map -->
+        <div class="infos_stations" id="map"></div>
+   
+          <!--bloc des information de station-->
+          <div class="infos_stations" id="reservation">
+             
+                <div class="infos_stations" id="status"></div>            
+                <div class="infos_stations" id="adresse"></div>
+                <div class="infos_stations" id="velo_toto"></div>
+                <div class="infos_stations" id="velo_indispo"></div>
+                <div class="infos_stations" id="velo_dispo"></div> 
+                <button id="boutton" type="button">Réservez</button>
+                <button id='confirmer' type="button">Confirmer</button>
+                <button id="anuler" type="button">Annuler</button>
+             
+            </div>
+            <!-- canvas -->
+            <canvas id="canvas" width="300" height="100"></canvas>
+      </section>
+
+
+         
+    <footer>
+        <div id="time"></div>
+    </footer>
+      
+     <!--Fichier js --> 
+     <script src="../js/ajax.js"></script>
+     <script src="../js/jquery-3.2.1.min.js"></script>
+     <script src="../js/markerclusterer.js"></script>
+     <script src="../js/slider.js"></script>     
+     <script src="../js/ObjMap.js"></script>      
+     <script src="../js/canvas.js"></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvBcp9jcRBw7FeexUVALQZ--jII5XI2FQ" ></script>
+     <script src="../js/App.js"></script>
+    </body>
+</html>
